@@ -1,0 +1,8 @@
+name: test
+on: workflow_dispatch
+jobs:
+  test-run:
+    runs-on: ubuntu-latest
+    steps:
+      - name: test_the_github_actions
+        run: echo "hello, abhinav"
