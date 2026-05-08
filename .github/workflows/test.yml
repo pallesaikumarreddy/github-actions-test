@@ -1,10 +1,24 @@
 name: test
 on: workflow_dispatch
 jobs:
-  test-run:
+  build:
     runs-on: ubuntu-latest
     steps:
       - name: test_the_github_actions
         run: |
-          echo "hello, abhinav"
-          echo "hello, sai"
+          echo "Build is started"
+          echo "Build is completed"
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: test_the_github_actions
+        run: |
+          echo "test is started"
+          echo "test is completed"
+    deploy:
+      runs-on: ubuntu-latest
+      steps:
+        - name: test_the_github_actions
+          run: |
+            echo "deploy is started"
+            echo "deploy is completed"  
