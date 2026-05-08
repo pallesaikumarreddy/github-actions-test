@@ -8,6 +8,7 @@ jobs:
         run: |
           echo "Build is started"
           echo "Build is completed"
+  
   test:
     runs-on: ubuntu-latest
     steps:
@@ -15,10 +16,11 @@ jobs:
         run: |
           echo "test is started"
           echo "test is completed"
-    deploy:
-      runs-on: ubuntu-latest
-      steps:
-        - name: test_the_github_actions
-          run: |
-            echo "deploy is started"
-            echo "deploy is completed"  
+  
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: test_the_github_actions
+        run: |
+          echo "deploy is started"
+          echo "deploy is completed"
