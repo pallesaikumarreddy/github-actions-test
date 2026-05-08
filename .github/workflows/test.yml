@@ -6,8 +6,8 @@ jobs:
     steps:
       - name: test_the_github_actions
         run: |
-          echo "Build is started"
-          echo "Build is completed"
+          echo "Build is ${{ vars.START }}"
+          echo "Build is ${{ vars.COMPLETE }}"
   
   test:
     runs-on: ubuntu-latest
